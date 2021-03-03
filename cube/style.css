@@ -14,15 +14,22 @@ section {
     height: 100vh;
 }
 
-section .box {
+section .left {
     position: absolute;
     top: calc(50% - 200px);
-    left: calc(50% - 200px);
+    left: calc(25% - 200px);
     width: 400px;
     height: 400px;
     transform-style: preserve-3d;
 }
-
+section .right {
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(75% - 200px);
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+}
 section .box div {
     position: absolute;
     top: 0;
