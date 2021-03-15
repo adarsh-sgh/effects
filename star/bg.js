@@ -10,13 +10,13 @@ const canvas = document.querySelector('canvas'),
 let textBlock
 function tbUpdate() {
   textBlock = {
-    textDisplayed: "SPEC",
+    textDisplayed: "SPEC FEST",
     yf: canvas.height / 2,
     yi:canvas.height/2-85//guessed text height
     
   }
   context.font = "6vw helvetica"//setting font for text
-  context.fillStyle = 'white'
+  context.fillStyle = 'yellow'
   textBlock.textWidth= context.measureText(textBlock.textDisplayed).width,
     textBlock.xi=canvas.width/2 - textBlock.textWidth/2
     textBlock.xf=textBlock.xi + textBlock.textWidth
@@ -132,7 +132,7 @@ function recycleStar( star ) {
 
 function resize() {
 
-  scale = window.devicePixelRatio || 1;
+  //scale = window.devicePixelRatio || 1;
 
   width = window.innerWidth * scale;
   height = window.innerHeight * scale;
